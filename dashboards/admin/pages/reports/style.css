@@ -1,0 +1,31 @@
+/* Admin – Reports page. Only this page uses these rules. */
+/* Admin: Reports (requirement 3.8) */
+.rp-period { padding: 1rem 1.1rem; margin-bottom: 1rem; display: grid; gap: .8rem; }
+.rp-chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+.rp-chips .btn { border-radius: 999px; }
+.rp-dates { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: .75rem; }
+.rp-note { font-size: .85rem; color: var(--osl-muted); margin: 0 0 .6rem; }
+.rp-card { padding: 1rem 1.1rem; margin-bottom: 1rem; }
+.rp-card-title { font-size: 1rem; font-weight: 800; margin: 0 0 .2rem; color: var(--osl-dark); }
+.rp-tabs { margin-bottom: 1rem; overflow-x: auto; max-width: 100%; }
+.rp-table-wrap { overflow-x: auto; border: 1px solid var(--osl-border); border-radius: var(--osl-radius-sm); }
+.rp-table-wrap th, .rp-table-wrap td { white-space: nowrap; }
+.rp-num { font-variant-numeric: tabular-nums; }
+.rp-foot td { font-weight: 800; background: var(--osl-light); }
+
+.rp-legend { display: flex; flex-wrap: wrap; gap: 1rem; font-size: .85rem; color: var(--osl-muted); margin-bottom: .5rem; }
+.rp-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-inline-end: .35rem; vertical-align: middle; }
+.rp-swatch.rp-bar-rev, .rp-bar-rev { background: var(--osl-primary); }
+.rp-swatch.rp-bar-exp, .rp-bar-exp { background: #F0A93B; }
+.rp-chart { display: flex; align-items: flex-end; gap: .5rem; padding: .5rem .25rem 0; margin-bottom: 1rem; overflow-x: auto; border-bottom: 1px solid var(--osl-border); }
+.rp-col { flex: 0 0 auto; min-width: 46px; display: flex; flex-direction: column; align-items: center; }
+.rp-bars { height: 170px; display: flex; align-items: flex-end; gap: 3px; }
+.rp-bar { width: 11px; border-radius: 4px 4px 0 0; }
+.rp-col-label { font-size: .72rem; color: var(--osl-muted); margin: .4rem 0 .6rem; white-space: nowrap; }
+
+@media (max-width: 575.98px) {
+  .rp-card, .rp-period { padding: .9rem; }
+  .rp-bar { width: 8px; }
+}
+
+.rp-card{padding:1.25rem;margin-bottom:1rem}.rp-card-title{font-size:1.05rem;font-weight:700;margin:0 0 .25rem}.rp-note{color:var(--osl-muted);font-size:.85rem;margin:0 0 .75rem}.rp-table-wrap{overflow-x:auto}.rp-num{font-variant-numeric:tabular-nums}.rp-foot td{font-weight:700;background:var(--osl-light)}

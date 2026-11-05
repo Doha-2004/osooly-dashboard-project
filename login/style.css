@@ -1,0 +1,40 @@
+/* Login page (login.html): one centred screen, no sidebar. Colours and radii come from variables.css. */
+.login-page {
+  position: relative; min-height: 100vh; min-height: 100dvh;
+  display: flex; align-items: center; justify-content: center;
+  padding: 72px 16px 32px;             /* top space for the language button */
+  background: var(--osl-bg);
+}
+.login-lang { position: absolute; top: 16px; inset-inline-end: 16px; }
+.login-stack { width: 100%; max-width: 440px; display: grid; gap: 16px; }
+.login-card { padding: 0; overflow: hidden; }
+.login-banner { background: var(--osl-light); }
+.login-banner-img { display: block; width: 100%; height: auto; }
+.login-body { padding: 28px; }
+.login-title { font-size: 1.4rem; font-weight: 700; text-align: center; color: var(--osl-text); margin: 0 0 4px; }
+.login-sub { text-align: center; color: var(--osl-muted); margin: 0 0 20px; }
+.login-demo { padding: 16px 20px; }
+.login-demo-title { font-size: 1rem; font-weight: 700; display: flex; align-items: center; gap: 8px; margin: 0 0 4px; }
+.login-demo-note { color: var(--osl-muted); font-size: .9rem; margin: 0 0 12px; }
+.login-demo .list-group-item { text-align: start; }
+.login-demo code { direction: ltr; text-align: start; }
+@media (max-width: 575.98px) {
+  .login-body { padding: 24px 18px; }
+}
+
+/* Styles the login page needs from the old shared components (page is independent of any dashboard). */
+.osl-card { background: var(--osl-white); border: 1px solid var(--osl-border); border-radius: var(--osl-radius); box-shadow: var(--osl-shadow); }
+.topbar-pill {
+  height: 40px; padding-inline: .75rem; display: inline-flex; align-items: center; gap: .5rem;
+  border: 1px solid transparent; border-radius: var(--osl-radius-sm); background: transparent;
+  color: var(--osl-nav-text); font-size: .9rem; font-weight: 600; white-space: nowrap;
+}
+.topbar-pill:hover { background: var(--osl-light); color: var(--osl-primary); }
+.demo-tag { padding: .05rem .4rem; border-radius: 6px; background: var(--osl-light); color: var(--osl-primary); font-size: .7rem; font-weight: 700; }
+
+/* RESPONSIVE (audit): touch targets on tablet / phone widths */
+@media (max-width: 1023.98px), (pointer: coarse) {
+  .btn, .topbar-pill, .list-group-item-action { min-height: 44px; }
+  .input-group .btn { min-width: 44px; }
+  .form-control { min-height: 44px; }
+}

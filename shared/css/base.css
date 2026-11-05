@@ -1,0 +1,68 @@
+/* Typography, Bootstrap theme overrides, accessibility basics. */
+:root {
+  --bs-body-font-family: 'Lato', 'Kufam', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --bs-body-color: var(--osl-text);
+  --bs-body-bg: var(--osl-bg);
+  --bs-primary: var(--osl-primary);
+  --bs-primary-rgb: var(--osl-primary-rgb);
+  --bs-link-color: var(--osl-primary);
+  --bs-link-color-rgb: var(--osl-primary-rgb);
+  --bs-link-hover-color: var(--osl-dark);
+  --bs-border-color: var(--osl-border);
+  --bs-secondary-color: var(--osl-muted);
+  --bs-border-radius: var(--osl-radius-sm);
+}
+:root[lang="ar"] {
+  --bs-body-font-family: 'Kufam', 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --bs-body-line-height: 1.7;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--osl-primary); --bs-btn-border-color: var(--osl-primary);
+  --bs-btn-hover-bg: var(--osl-dark); --bs-btn-hover-border-color: var(--osl-dark);
+  --bs-btn-active-bg: var(--osl-dark); --bs-btn-active-border-color: var(--osl-dark);
+  --bs-btn-disabled-bg: var(--osl-primary); --bs-btn-disabled-border-color: var(--osl-primary);
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--osl-primary); --bs-btn-border-color: var(--osl-primary);
+  --bs-btn-hover-bg: var(--osl-primary); --bs-btn-hover-border-color: var(--osl-primary);
+  --bs-btn-active-bg: var(--osl-dark); --bs-btn-active-border-color: var(--osl-dark);
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--osl-primary);
+  box-shadow: 0 0 0 .2rem rgba(var(--osl-primary-rgb), .18);
+}
+
+:focus-visible { outline: 2px solid var(--osl-primary); outline-offset: 2px; }
+
+.skip-link {
+  position: fixed; inset-block-start: .5rem; inset-inline-start: .5rem; z-index: 2000;
+  padding: .5rem 1rem; border-radius: var(--osl-radius-sm);
+  background: var(--osl-primary); color: #fff; text-decoration: none;
+  transform: translateY(-200%);
+}
+.skip-link:focus { transform: none; color: #fff; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+
+/* Bilingual text: every string exists in the HTML as <span data-lang="ar"> and <span data-lang="en">.
+   The span that does not match the page language is hidden. */
+:root[lang="ar"] [data-lang="en"],
+:root[lang="en"] [data-lang="ar"] { display: none !important; }
+
+/* Page boot: boot.js adds these classes; shell.js removes them once the shared layout is built.
+   The page stays hidden until then (no half-built flash) and nothing animates during the first paint. */
+html.osl-boot body { display: none; }
+html.osl-preload *, html.osl-preload *::before, html.osl-preload *::after { transition: none !important; }
+
+/* Dashboard background (all dashboard pages). The sidebar, topbar and cards are white and stay on top of it.
+   The login page sets its own background on .login-page, so it is not affected. */
+body {
+  background-color: var(--osl-bg);
+  background-image: url('../assets/img/dashboard-bg.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}

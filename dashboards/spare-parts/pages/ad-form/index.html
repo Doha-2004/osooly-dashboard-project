@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-login="../../../../login/index.html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-ar="أصولي – إعلان قطعة غيار" data-en="Osooly – Spare part ad form">Osooly</title>
+  <link rel="icon" href="../../../../shared/assets/img/osoolyLogo.png" type="image/png">
+  <link id="bootstrap-rtl" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+  <link id="bootstrap-ltr" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" media="not all">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;600;700;800&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../../../../shared/css/variables.css">
+  <link rel="stylesheet" href="../../../../shared/css/base.css">
+  <link rel="stylesheet" href="../../css/dashboard.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="../../js/boot.js"></script>
+</head>
+<body data-sidebar="full">
+  <a class="skip-link" href="#content"><span data-lang="ar">تخطي إلى المحتوى</span><span data-lang="en">Skip to content</span></a>
+
+  <aside id="sidebar" class="app-sidebar">
+    <span id="main-nav-label" class="visually-hidden"><span data-lang="ar">التنقل الرئيسي</span><span data-lang="en">Main navigation</span></span>
+    <div class="sidebar-head">
+      <a class="brand" href="../ads/index.html"><span class="brand-mark" aria-hidden="true">O</span><span class="brand-text"><span data-lang="ar">أصولي</span><span data-lang="en">Osooly</span></span></a>
+      <button type="button" class="icon-btn sidebar-close" data-action="close-sidebar"><i class="bi bi-x-lg" aria-hidden="true"></i><span class="visually-hidden"><span data-lang="ar">إغلاق القائمة</span><span data-lang="en">Close menu</span></span></button>
+    </div>
+    <nav class="sidebar-nav" aria-labelledby="main-nav-label">
+      <div class="nav-section">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link-item" href="../ads/index.html"><i class="bi bi-gear nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">إعلانات قطع الغيار</span><span data-lang="en">Parts ads</span></span></a></li>
+          <li class="nav-item"><a class="nav-link-item active" aria-current="page" href="../ad-form/index.html"><i class="bi bi-plus-circle nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">إضافة إعلان</span><span data-lang="en">Add ad</span></span></a></li>
+          <li class="nav-item"><a class="nav-link-item" href="../quotes/index.html"><i class="bi bi-chat-left-dots nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">طلبات التسعير</span><span data-lang="en">Quote requests</span></span></a></li>
+          <li class="nav-item"><a class="nav-link-item" href="../subscription/index.html"><i class="bi bi-credit-card-2-front nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">الاشتراك</span><span data-lang="en">Subscription</span></span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+  <div class="app-main">
+    <header id="topbar" class="topbar">
+      <button type="button" class="icon-btn" id="sidebar-toggle" data-action="toggle-sidebar" aria-controls="sidebar" aria-expanded="true"><i class="bi bi-list" aria-hidden="true"></i><span class="visually-hidden"><span data-lang="ar">القائمة الرئيسية</span><span data-lang="en">Toggle navigation</span></span></button>
+      <a class="topbar-brand d-md-none" href="../ads/index.html"><span class="brand-mark" aria-hidden="true">O</span><span class="visually-hidden"><span data-lang="ar">أصولي</span><span data-lang="en">Osooly</span></span></a>
+      <div class="topbar-actions">
+        <button type="button" class="topbar-pill" data-action="toggle-lang"><i class="bi bi-translate" aria-hidden="true"></i><span class="d-none d-sm-inline"><span data-lang="ar" lang="en">English</span><span data-lang="en" lang="ar">العربية</span></span><span class="visually-hidden"><span data-lang="ar">تغيير اللغة إلى الإنجليزية</span><span data-lang="en">Switch language to Arabic</span></span></button>
+        <div class="dropdown">
+          <button type="button" class="icon-btn" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bell" aria-hidden="true"></i><span class="visually-hidden"><span data-lang="ar">الإشعارات</span><span data-lang="en">Notifications</span></span></button>
+          <div class="dropdown-menu dropdown-menu-end notif-menu"><div class="notif-head"><span data-lang="ar">الإشعارات</span><span data-lang="en">Notifications</span></div><div class="notif-empty"><i class="bi bi-bell-slash" aria-hidden="true"></i><span data-lang="ar">لا توجد إشعارات جديدة</span><span data-lang="en">No new notifications</span></div></div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="topbar-pill user-btn" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="avatar" aria-hidden="true" data-user-initials><span data-lang="ar">عخ</span><span data-lang="en">OK</span></span>
+            <span class="user-meta d-none d-md-block"><strong data-user-name><span data-lang="ar">عمر خالد</span><span data-lang="en">Omar Khaled</span></strong><span data-lang="ar">محل قطع غيار</span><span data-lang="en">Spare parts shop</span></span>
+            <span class="visually-hidden"><span data-lang="ar">حساب المستخدم</span><span data-lang="en">User menu</span></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end"><li><button type="button" class="dropdown-item" data-action="logout"><i class="bi bi-box-arrow-right me-2" aria-hidden="true"></i><span data-lang="ar">تسجيل الخروج</span><span data-lang="en">Log out</span></button></li></ul>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="app-content" tabindex="-1">
+      <section class="page-hero osl-card">
+        <div class="page-hero-media"><img class="page-hero-img" src="../../../../shared/assets/img/osooly-banner-900.webp" srcset="../../../../shared/assets/img/osooly-banner-900.webp 900w, ../../../../shared/assets/img/osooly-banner.webp 2172w" sizes="(min-width: 1400px) 1400px, 100vw" width="2172" height="724" alt="" decoding="async"></div>
+        <div class="page-header">
+          <div class="page-header-main">
+            <nav aria-labelledby="breadcrumb-label"><span id="breadcrumb-label" class="visually-hidden"><span data-lang="ar">مسار التنقل</span><span data-lang="en">Breadcrumb</span></span>
+              <ol class="breadcrumb"><li class="breadcrumb-item"><span data-lang="ar">لوحة محل قطع الغيار</span><span data-lang="en">Spare Parts Shop Dashboard</span></li><li class="breadcrumb-item active" aria-current="page"><span data-lang="ar">إعلان قطعة غيار</span><span data-lang="en">Spare part ad form</span></li></ol></nav>
+            <h1 class="page-title"><span data-lang="ar">إعلان قطعة غيار</span><span data-lang="en">Spare part ad form</span></h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="osl-card p-4">
+        <h2 class="h5 mb-1"><span data-mode="add"><span data-lang="ar">إضافة إعلان جديد</span><span data-lang="en">Add a new ad</span></span><span class="d-none" data-mode="edit"><span data-lang="ar">تعديل الإعلان</span><span data-lang="en">Edit ad</span></span></h2>
+        <p class="text-secondary mb-3"><span data-mode="add"><span data-lang="ar">الإعلان لا يظهر في المنصة إلا بعد اعتماد الإدارة له.</span><span data-lang="en">The ad is shown on the platform only after the admin approves it.</span></span><span class="d-none" data-mode="edit"><span data-lang="ar">أي تعديل يُرسل الإعلان للمراجعة من جديد قبل نشره.</span><span data-lang="en">Any change sends the ad back for review before it is published again.</span></span></p>
+        <div class="alert alert-warning small mb-3"><i class="bi bi-info-circle me-1" aria-hidden="true"></i><span data-lang="ar">الوثيقة لا تحدد حقول إعلان قطعة الغيار (التصنيف، الحالة، السيارة المناسبة) ولا سياسة التعديل؛ الحقول الحالية مبدئية.</span><span data-lang="en">The document does not define the spare-part ad fields (category, condition, compatible car) or the edit policy; the current fields are placeholders.</span></div>
+        <div class="alert alert-danger d-none" id="form-error" role="alert"><i class="bi bi-exclamation-triangle me-1" aria-hidden="true"></i><span data-lang="ar">راجع الحقول المحددة ثم أعد المحاولة.</span><span data-lang="en">Check the highlighted fields and try again.</span></div>
+        <form id="ad-form" novalidate>
+          <div class="row g-3">
+<div class="col-12 col-md-12"><label class="form-label fw-semibold" for="f-title"><span data-lang="ar">اسم القطعة</span><span data-lang="en">Part name</span></label><input type="text" class="form-control" id="f-title" required><div class="invalid-feedback"><span data-lang="ar">أدخل اسمًا من 3 إلى 80 حرفًا.</span><span data-lang="en">Enter a name of 3 to 80 characters.</span></div></div>
+<div class="col-12 col-md-6"><label class="form-label fw-semibold" for="f-price"><span data-lang="ar">السعر (ج.م)</span><span data-lang="en">Price (EGP)</span></label><input type="number" class="form-control" id="f-price" min="1" step="any" required><div class="invalid-feedback"><span data-lang="ar">أدخل سعرًا صحيحًا.</span><span data-lang="en">Enter a valid price.</span></div></div>
+<div class="col-12 col-md-6"><label class="form-label fw-semibold" for="f-cat"><span data-lang="ar">التصنيف</span><span data-lang="en">Category</span></label><select class="form-select" id="f-cat" required><option value="" data-ar="اختر" data-en="Choose">اختر</option><option value="engine" data-ar="محرك" data-en="Engine">محرك</option><option value="brakes" data-ar="فرامل" data-en="Brakes">فرامل</option><option value="tires" data-ar="إطارات" data-en="Tires">إطارات</option><option value="electrical" data-ar="كهرباء" data-en="Electrical">كهرباء</option><option value="body" data-ar="هيكل" data-en="Body">هيكل</option><option value="other" data-ar="أخرى" data-en="Other">أخرى</option></select><div class="invalid-feedback"><span data-lang="ar">اختر التصنيف.</span><span data-lang="en">Choose a category.</span></div></div>
+<div class="col-12 col-md-6"><label class="form-label fw-semibold" for="f-cond"><span data-lang="ar">حالة القطعة</span><span data-lang="en">Condition</span></label><select class="form-select" id="f-cond" required><option value="" data-ar="اختر" data-en="Choose">اختر</option><option value="new" data-ar="جديد" data-en="New">جديد</option><option value="used" data-ar="مستعمل" data-en="Used">مستعمل</option></select><div class="invalid-feedback"><span data-lang="ar">اختر الحالة.</span><span data-lang="en">Choose the condition.</span></div></div>
+<div class="col-12 col-md-6"><label class="form-label fw-semibold" for="f-compat"><span data-lang="ar">السيارة المناسبة</span><span data-lang="en">Compatible car</span></label><input type="text" class="form-control" id="f-compat" required><div class="invalid-feedback"><span data-lang="ar">أدخل السيارة المناسبة.</span><span data-lang="en">Enter the compatible car.</span></div></div>
+<div class="col-12 col-md-6"><label class="form-label fw-semibold" for="f-phone"><span data-lang="ar">هاتف التواصل</span><span data-lang="en">Contact phone</span></label><input type="tel" class="form-control" id="f-phone" dir="ltr" inputmode="tel" required><div class="invalid-feedback"><span data-lang="ar">أدخل رقم موبايل مصري صحيحًا.</span><span data-lang="en">Enter a valid Egyptian mobile number.</span></div></div>
+<div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="f-wa"><label class="form-check-label" for="f-wa"><span data-lang="ar">إتاحة التواصل عبر واتساب</span><span data-lang="en">Allow contact through WhatsApp</span></label></div></div>
+<div class="col-12 col-md-12"><label class="form-label fw-semibold" for="f-desc"><span data-lang="ar">وصف القطعة</span><span data-lang="en">Description</span></label><textarea class="form-control" rows="4" id="f-desc" required></textarea><div class="invalid-feedback"><span data-lang="ar">اكتب وصفًا لا يقل عن 10 أحرف.</span><span data-lang="en">Write a description of at least 10 characters.</span></div></div>
+<div class="col-12"><label class="form-label fw-semibold" for="f-photos"><span data-lang="ar">صور القطعة</span><span data-lang="en">Part photos</span></label><input type="file" class="form-control" id="f-photos" accept="image/*" multiple><div class="form-text"><span data-hint="none"><span data-lang="ar">أضف صورة واحدة على الأقل، وحتى 8 صور.</span><span data-lang="en">Add at least one photo, up to 8.</span></span><span class="d-none" data-hint="keep"><span data-lang="ar">الصور الحالية:</span><span data-lang="en">Current photos:</span> <bdi data-photo-cur></bdi>. <span data-lang="ar">اختر صورًا جديدة فقط إذا أردت استبدالها.</span><span data-lang="en">Choose new photos only to replace them.</span></span><span class="d-none" data-hint="chosen"><span data-lang="ar">عدد الصور المختارة:</span><span data-lang="en">Photos selected:</span> <bdi data-photo-n></bdi></span></div><div class="invalid-feedback"><span data-lang="ar">أضف صورة واحدة على الأقل، وحتى 8 صور.</span><span data-lang="en">Add at least one photo, up to 8.</span></div></div>
+          </div>
+          <div class="d-flex flex-wrap justify-content-end gap-2 mt-4">
+            <a class="btn btn-outline-secondary" href="../ads/index.html"><span data-lang="ar">إلغاء</span><span data-lang="en">Cancel</span></a>
+            <button type="submit" class="btn btn-primary" id="form-submit"><span data-mode="add"><span data-lang="ar">إرسال للمراجعة</span><span data-lang="en">Send for review</span></span><span class="d-none" data-mode="edit"><span data-lang="ar">حفظ وإرسال للمراجعة</span><span data-lang="en">Save and send for review</span></span></button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toast" class="toast align-items-center text-bg-primary border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex"><div class="toast-body" id="toast-body"></div>
+      <button type="button" class="btn-close btn-close-white m-auto me-2" data-bs-dismiss="toast"><span class="visually-hidden"><span data-lang="ar">إغلاق</span><span data-lang="en">Close</span></span></button></div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="logout-modal" tabindex="-1" aria-labelledby="logout-title" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h2 class="modal-title fs-5" id="logout-title"><span data-lang="ar">تسجيل الخروج؟</span><span data-lang="en">Log out?</span></h2><button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden"><span data-lang="ar">إغلاق</span><span data-lang="en">Close</span></span></button></div>
+    <div class="modal-body"><span data-lang="ar">سيتم إنهاء جلستك الحالية.</span><span data-lang="en">You will be signed out of this session.</span></div>
+    <div class="modal-footer"><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><span data-lang="ar">إلغاء</span><span data-lang="en">Cancel</span></button><button type="button" class="btn btn-primary" id="logout-confirm"><span data-lang="ar">تسجيل الخروج</span><span data-lang="en">Log out</span></button></div>
+  </div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/dashboard.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

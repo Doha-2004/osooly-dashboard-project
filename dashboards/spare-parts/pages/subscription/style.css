@@ -1,0 +1,5 @@
+/* Spare Parts Shop Dashboard – Subscription page. Only this page uses these rules. */
+[data-notice] { display: none; }
+#sub-card[data-state="near"] [data-notice="near"], #sub-card[data-state="grace"] [data-notice="grace"], #sub-card[data-state="expired"] [data-notice="expired"] { display: block; }
+.sub-badges [data-st] { display: none; }
+#sub-card[data-state="active"] [data-st="active"], #sub-card[data-state="near"] [data-st="near"], #sub-card[data-state="grace"] [data-st="grace"], #sub-card[data-state="expired"] [data-st="expired"] { display: inline-flex; }

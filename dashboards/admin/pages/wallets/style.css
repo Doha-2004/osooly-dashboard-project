@@ -1,0 +1,6 @@
+/* Admin Dashboard – Wallets & transactions page. Only this page uses these rules.
+   Each status variant (badge, action, section) is written in the HTML; the data-status attribute on the row or on the
+   details panel decides which one shows, so script.js only changes an attribute. */
+[data-status] [data-st] { display: none; }
+[data-status="ok"] [data-st="ok"] { display: inline-flex; }
+

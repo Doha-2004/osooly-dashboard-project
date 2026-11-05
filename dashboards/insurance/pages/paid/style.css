@@ -1,0 +1,16 @@
+/* Insurance Dashboard – Paid requests page. Only this page uses these rules.
+   Each status variant (badge, action, section) is written in the HTML; the data-status attribute on the row or on the
+   details panel decides which one shows, so script.js only changes an attribute. */
+[data-status] [data-st] { display: none; }
+[data-status="new"] [data-st="new"],
+[data-status="review"] [data-st="review"],
+[data-status="paid"] [data-st="paid"],
+[data-status="cancelled"] [data-st="cancelled"] { display: inline-flex; }
+
+#details:not([data-status="cancelled"]) [data-only="cancelled"] { display: none; }
+#details:not([data-status="new"]) [data-ask="take"] { display: none; }
+#details:not([data-status="new"]):not([data-status="review"]) [data-ask="assign"] { display: none; }
+#details:not([data-status="review"]) [data-ask="complete"] { display: none; }
+#details:not([data-status="review"]) [data-ask="pay"] { display: none; }
+#details:not([data-status="new"]):not([data-status="review"]) [data-ask="cancel"] { display: none; }
+#details [data-ask="pay"].d-none { display: none; }

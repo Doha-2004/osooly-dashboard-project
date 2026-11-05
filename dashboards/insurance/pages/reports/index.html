@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-login="../../../../login/index.html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-ar="أصولي – تقارير التأمين" data-en="Osooly – Insurance reports">Osooly</title>
+  <link rel="icon" href="../../../../shared/assets/img/osoolyLogo.png" type="image/png">
+  <link id="bootstrap-rtl" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+  <link id="bootstrap-ltr" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" media="not all">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;600;700;800&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../../../../shared/css/variables.css">
+  <link rel="stylesheet" href="../../../../shared/css/base.css">
+  <link rel="stylesheet" href="../../css/dashboard.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="../../js/boot.js"></script>
+</head>
+<body data-sidebar="full" data-page-roles="insurance_manager" data-page-fallback="../new/index.html">
+  <a class="skip-link" href="#content"><span data-lang="ar">تخطي إلى المحتوى</span><span data-lang="en">Skip to content</span></a>
+
+  <aside id="sidebar" class="app-sidebar">
+    <span id="main-nav-label" class="visually-hidden"><span data-lang="ar">التنقل الرئيسي</span><span data-lang="en">Main navigation</span></span>
+    <div class="sidebar-head">
+      <a class="brand" href="../new/index.html"><span class="brand-mark" aria-hidden="true">O</span><span class="brand-text"><span data-lang="ar">أصولي</span><span data-lang="en">Osooly</span></span></a>
+      <button type="button" class="icon-btn sidebar-close" data-action="close-sidebar"><i class="bi bi-x-lg" aria-hidden="true"></i><span class="visually-hidden"><span data-lang="ar">إغلاق القائمة</span><span data-lang="en">Close menu</span></span></button>
+    </div>
+    <nav class="sidebar-nav" aria-labelledby="main-nav-label">
+      <div class="nav-section">
+        <ul class="nav-list">
+          <li class="nav-item" data-role-only="insurance_manager"><a class="nav-link-item" href="../all/index.html"><i class="bi bi-collection nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">جميع الطلبات</span><span data-lang="en">All requests</span></span></a></li>
+          <li class="nav-item"><a class="nav-link-item" href="../new/index.html"><i class="bi bi-inbox nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">الطلبات الجديدة</span><span data-lang="en">New</span></span></a></li>
+          <li class="nav-item"><a class="nav-link-item" href="../under-review/index.html"><i class="bi bi-hourglass-split nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">قيد المراجعة</span><span data-lang="en">Under review</span></span></a></li>
+          <li class="nav-item"><a class="nav-link-item" href="../paid/index.html"><i class="bi bi-cash-coin nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">المدفوعة</span><span data-lang="en">Paid</span></span></a></li>
+          <li class="nav-item"><a class="nav-link-item" href="../cancelled/index.html"><i class="bi bi-x-circle nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">الملغاة</span><span data-lang="en">Cancelled</span></span></a></li>
+          <li class="nav-item" data-role-only="insurance_manager"><a class="nav-link-item active" aria-current="page" href="../reports/index.html"><i class="bi bi-bar-chart-line nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">التقارير</span><span data-lang="en">Reports</span></span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+  <div class="app-main">
+    <header id="topbar" class="topbar">
+      <button type="button" class="icon-btn" id="sidebar-toggle" data-action="toggle-sidebar" aria-controls="sidebar" aria-expanded="true"><i class="bi bi-list" aria-hidden="true"></i><span class="visually-hidden"><span data-lang="ar">القائمة الرئيسية</span><span data-lang="en">Toggle navigation</span></span></button>
+      <a class="topbar-brand d-md-none" href="../new/index.html"><span class="brand-mark" aria-hidden="true">O</span><span class="visually-hidden"><span data-lang="ar">أصولي</span><span data-lang="en">Osooly</span></span></a>
+      <div class="topbar-actions">
+        <button type="button" class="topbar-pill" data-action="toggle-lang"><i class="bi bi-translate" aria-hidden="true"></i><span class="d-none d-sm-inline"><span data-lang="ar" lang="en">English</span><span data-lang="en" lang="ar">العربية</span></span><span class="visually-hidden"><span data-lang="ar">تغيير اللغة إلى الإنجليزية</span><span data-lang="en">Switch language to Arabic</span></span></button>
+        <div class="dropdown">
+          <button type="button" class="icon-btn" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bell" aria-hidden="true"></i><span class="visually-hidden"><span data-lang="ar">الإشعارات</span><span data-lang="en">Notifications</span></span></button>
+          <div class="dropdown-menu dropdown-menu-end notif-menu"><div class="notif-head"><span data-lang="ar">الإشعارات</span><span data-lang="en">Notifications</span></div><div class="notif-empty"><i class="bi bi-bell-slash" aria-hidden="true"></i><span data-lang="ar">لا توجد إشعارات جديدة</span><span data-lang="en">No new notifications</span></div></div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="topbar-pill user-btn" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="avatar" aria-hidden="true" data-user-initials><span data-lang="ar">أم</span><span data-lang="en">AM</span></span>
+            <span class="user-meta d-none d-md-block"><strong data-user-name><span data-lang="ar">أحمد محمد</span><span data-lang="en">Ahmed Mohamed</span></strong><span data-lang="ar">مدير التأمين / موظف تأمين</span><span data-lang="en">Insurance manager / staff</span></span>
+            <span class="visually-hidden"><span data-lang="ar">حساب المستخدم</span><span data-lang="en">User menu</span></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end"><li><button type="button" class="dropdown-item" data-action="logout"><i class="bi bi-box-arrow-right me-2" aria-hidden="true"></i><span data-lang="ar">تسجيل الخروج</span><span data-lang="en">Log out</span></button></li></ul>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="app-content" tabindex="-1">
+      <section class="page-hero osl-card">
+        <div class="page-hero-media"><img class="page-hero-img" src="../../../../shared/assets/img/osooly-banner-900.webp" srcset="../../../../shared/assets/img/osooly-banner-900.webp 900w, ../../../../shared/assets/img/osooly-banner.webp 2172w" sizes="(min-width: 1400px) 1400px, 100vw" width="2172" height="724" alt="" decoding="async"></div>
+        <div class="page-header">
+          <div class="page-header-main">
+            <nav aria-labelledby="breadcrumb-label"><span id="breadcrumb-label" class="visually-hidden"><span data-lang="ar">مسار التنقل</span><span data-lang="en">Breadcrumb</span></span>
+              <ol class="breadcrumb"><li class="breadcrumb-item"><span data-lang="ar">لوحة التأمين</span><span data-lang="en">Insurance Dashboard</span></li><li class="breadcrumb-item active" aria-current="page"><span data-lang="ar">تقارير التأمين</span><span data-lang="en">Insurance reports</span></li></ol></nav>
+            <h1 class="page-title"><span data-lang="ar">تقارير التأمين</span><span data-lang="en">Insurance reports</span></h1>
+          </div>
+        </div>
+      </section>
+
+      <div id="page-body">
+      <div class="row g-3 mb-3"><div class="col-12 col-sm-6 col-xl-3"><div class="stat-card stat-primary"><div class="stat-head"><span class="stat-label"><span data-lang="ar">إجمالي الطلبات</span><span data-lang="en">Total requests</span></span><i class="bi bi-files stat-icon" aria-hidden="true"></i></div><div class="stat-value"><bdi data-tile="total">0</bdi></div></div></div><div class="col-12 col-sm-6 col-xl-3"><div class="stat-card stat-success"><div class="stat-head"><span class="stat-label"><span data-lang="ar">الطلبات المدفوعة</span><span data-lang="en">Paid requests</span></span><i class="bi bi-cash-coin stat-icon" aria-hidden="true"></i></div><div class="stat-value"><bdi data-tile="paid">0</bdi></div></div></div><div class="col-12 col-sm-6 col-xl-3"><div class="stat-card stat-primary"><div class="stat-head"><span class="stat-label"><span data-lang="ar">المبالغ المدفوعة (ج.م)</span><span data-lang="en">Paid amounts (EGP)</span></span><i class="bi bi-wallet2 stat-icon" aria-hidden="true"></i></div><div class="stat-value"><bdi data-tile="amount">0</bdi></div></div></div><div class="col-12 col-sm-6 col-xl-3"><div class="stat-card stat-warning"><div class="stat-head"><span class="stat-label"><span data-lang="ar">متوسط مدة المعالجة (أيام)</span><span data-lang="en">Average processing time (days)</span></span><i class="bi bi-stopwatch stat-icon" aria-hidden="true"></i></div><div class="stat-value"><bdi data-tile="avg">0</bdi></div></div></div></div>
+      <section class="osl-card rp-card"><h2 class="rp-card-title"><span data-lang="ar">عدد الطلبات حسب الحالة</span><span data-lang="en">Requests by status</span></h2><p class="rp-note"><span data-lang="ar">كل الطلبات، بغض النظر عن الموظف المسؤول.</span><span data-lang="en">All requests, regardless of the employee assigned.</span></p>
+        <div class="rp-table-wrap"><table class="table osl-table align-middle mb-0" data-table="status"><caption class="visually-hidden"><span data-lang="ar">عدد الطلبات حسب الحالة</span><span data-lang="en">Requests by status</span></caption><thead><tr><th scope="col"><span data-lang="ar">الحالة</span><span data-lang="en">Status</span></th><th scope="col" class="text-end"><span data-lang="ar">العدد</span><span data-lang="en">Count</span></th><th scope="col" class="text-end"><span data-lang="ar">النسبة</span><span data-lang="en">Share</span></th></tr></thead><tbody>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+        </tbody></table></div>
+        <p class="rp-note mb-0 d-none" data-empty="status"><span data-lang="ar">لا توجد بيانات.</span><span data-lang="en">No data.</span></p>
+      </section>
+      <section class="osl-card rp-card"><h2 class="rp-card-title"><span data-lang="ar">الطلبات التي عالجها كل موظف</span><span data-lang="en">Requests handled by each employee</span></h2><p class="rp-note"><span data-lang="ar">الطلبات المسندة إلى كل موظف حسب حالتها.</span><span data-lang="en">Requests assigned to each employee, by status.</span></p>
+        <div class="rp-table-wrap"><table class="table osl-table align-middle mb-0" data-table="staff"><caption class="visually-hidden"><span data-lang="ar">الطلبات التي عالجها كل موظف</span><span data-lang="en">Requests handled by each employee</span></caption><thead><tr><th scope="col"><span data-lang="ar">الموظف</span><span data-lang="en">Employee</span></th><th scope="col" class="text-end"><span data-lang="ar">قيد المراجعة</span><span data-lang="en">Under review</span></th><th scope="col" class="text-end"><span data-lang="ar">مدفوعة</span><span data-lang="en">Paid</span></th><th scope="col" class="text-end"><span data-lang="ar">ملغاة</span><span data-lang="en">Cancelled</span></th><th scope="col" class="text-end"><span data-lang="ar">الإجمالي</span><span data-lang="en">Total</span></th></tr></thead><tbody>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td><td class="text-end rp-num"><span data-c="3"></span></td><td class="text-end rp-num"><span data-c="4"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td><td class="text-end rp-num"><span data-c="3"></span></td><td class="text-end rp-num"><span data-c="4"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td><td class="text-end rp-num"><span data-c="3"></span></td><td class="text-end rp-num"><span data-c="4"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td><td class="text-end rp-num"><span data-c="3"></span></td><td class="text-end rp-num"><span data-c="4"></span></td></tr>
+        </tbody><tfoot><tr class="rp-foot"><td><span data-foot="0"></span></td><td class="text-end rp-num"><span data-foot="1"></span></td><td class="text-end rp-num"><span data-foot="2"></span></td><td class="text-end rp-num"><span data-foot="3"></span></td><td class="text-end rp-num"><span data-foot="4"></span></td></tr></tfoot></table></div>
+        <p class="rp-note mb-0 d-none" data-empty="staff"><span data-lang="ar">لا توجد بيانات.</span><span data-lang="en">No data.</span></p>
+      </section>
+      <section class="osl-card rp-card"><h2 class="rp-card-title"><span data-lang="ar">المدفوعات حسب شركة التأمين</span><span data-lang="en">Payments by insurance company</span></h2><p class="rp-note"><span data-lang="ar">الطلبات المدفوعة مجمعة حسب شركة التأمين، والمبالغ بالجنيه المصري.</span><span data-lang="en">Paid requests grouped by insurance company. Amounts in EGP.</span></p>
+        <div class="rp-table-wrap"><table class="table osl-table align-middle mb-0" data-table="insurer"><caption class="visually-hidden"><span data-lang="ar">المدفوعات حسب شركة التأمين</span><span data-lang="en">Payments by insurance company</span></caption><thead><tr><th scope="col"><span data-lang="ar">شركة التأمين</span><span data-lang="en">Insurance company</span></th><th scope="col" class="text-end"><span data-lang="ar">عدد الطلبات</span><span data-lang="en">Requests</span></th><th scope="col" class="text-end"><span data-lang="ar">المبلغ (ج.م)</span><span data-lang="en">Amount (EGP)</span></th></tr></thead><tbody>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+<tr data-r class="d-none"><td><span data-c="0"></span></td><td class="text-end rp-num"><span data-c="1"></span></td><td class="text-end rp-num"><span data-c="2"></span></td></tr>
+        </tbody><tfoot><tr class="rp-foot"><td><span data-foot="0"></span></td><td class="text-end rp-num"><span data-foot="1"></span></td><td class="text-end rp-num"><span data-foot="2"></span></td></tr></tfoot></table></div>
+        <p class="rp-note mb-0 d-none" data-empty="insurer"><span data-lang="ar">لا توجد بيانات.</span><span data-lang="en">No data.</span></p>
+      </section>
+<p class="rp-note"><span data-lang="ar">متوسط المدة يحسب من تاريخ إنشاء الطلب حتى تاريخ الدفع، للطلبات المدفوعة فقط. تصدير التقارير غير محدد في الوثيقة.</span><span data-lang="en">The average runs from the request creation date to the payment date, for paid requests only. Report export is not defined in the document.</span></p>      </div>
+    </main>
+  </div>
+
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toast" class="toast align-items-center text-bg-primary border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex"><div class="toast-body" id="toast-body"></div>
+      <button type="button" class="btn-close btn-close-white m-auto me-2" data-bs-dismiss="toast"><span class="visually-hidden"><span data-lang="ar">إغلاق</span><span data-lang="en">Close</span></span></button></div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="logout-modal" tabindex="-1" aria-labelledby="logout-title" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h2 class="modal-title fs-5" id="logout-title"><span data-lang="ar">تسجيل الخروج؟</span><span data-lang="en">Log out?</span></h2><button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden"><span data-lang="ar">إغلاق</span><span data-lang="en">Close</span></span></button></div>
+    <div class="modal-body"><span data-lang="ar">سيتم إنهاء جلستك الحالية.</span><span data-lang="en">You will be signed out of this session.</span></div>
+    <div class="modal-footer"><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><span data-lang="ar">إلغاء</span><span data-lang="en">Cancel</span></button><button type="button" class="btn btn-primary" id="logout-confirm"><span data-lang="ar">تسجيل الخروج</span><span data-lang="en">Log out</span></button></div>
+  </div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/dashboard.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

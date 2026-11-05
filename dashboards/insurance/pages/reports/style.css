@@ -1,0 +1,7 @@
+/* Insurance Dashboard – Insurance reports page. Only this page uses these rules. */
+.rp-card { padding: 1.25rem; margin-bottom: 1rem; }
+.rp-card-title { font-size: 1.05rem; font-weight: 700; margin: 0 0 .25rem; }
+.rp-note { color: var(--osl-muted); font-size: .85rem; margin: 0 0 .75rem; }
+.rp-table-wrap { overflow-x: auto; }
+.rp-num { font-variant-numeric: tabular-nums; }
+.rp-foot td { font-weight: 700; background: var(--osl-light); }

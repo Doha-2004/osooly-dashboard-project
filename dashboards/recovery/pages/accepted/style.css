@@ -1,0 +1,12 @@
+/* Recovery Provider Dashboard – Accepted requests page. Only this page uses these rules.
+   Each status variant (badge, action, section) is written in the HTML; the data-status attribute on the row or on the
+   details panel decides which one shows, so script.js only changes an attribute. */
+[data-status] [data-st] { display: none; }
+[data-status="incoming"] [data-st="incoming"],
+[data-status="accepted"] [data-st="accepted"],
+[data-status="rejected"] [data-st="rejected"],
+[data-status="completed"] [data-st="completed"] { display: inline-flex; }
+
+#details:not([data-status="rejected"]) [data-only="rejected"] { display: none; }
+#details:not([data-status="accepted"]) [data-ask="complete"] { display: none; }
+#rows tr[data-new="1"] { font-weight: 700; }

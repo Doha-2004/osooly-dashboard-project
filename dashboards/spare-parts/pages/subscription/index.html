@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-login="../../../../login/index.html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-ar="أصولي – الاشتراك" data-en="Osooly – Subscription">Osooly</title>
+  <link rel="icon" href="../../../../shared/assets/img/osoolyLogo.png" type="image/png">
+  <link id="bootstrap-rtl" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+  <link id="bootstrap-ltr" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" media="not all">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;600;700;800&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../../../../shared/css/variables.css">
+  <link rel="stylesheet" href="../../../../shared/css/base.css">
+  <link rel="stylesheet" href="../../css/dashboard.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="../../js/boot.js"></script>
+</head>
+<body data-sidebar="full">
+  <a class="skip-link" href="#content"><span data-lang="ar">تخطي إلى المحتوى</span><span data-lang="en">Skip to content</span></a>
+
+  <aside id="sidebar" class="app-sidebar">
+    <span id="main-nav-label" class="visually-hidden"><span data-lang="ar">التنقل الرئيسي</span><span data-lang="en">Main navigation</span></span>
+    <div class="sidebar-head">
+      <a class="brand" href="../ads/index.html"><span class="brand-mark" aria-hidden="true">O</span><span class="brand-text"><span data-lang="ar">أصولي</span><span data-lang="en">Osooly</span></span></a>
+      <button type="button" class="icon-btn sidebar-close" data-action="close-sidebar"><i class="bi bi-x-lg" aria-hidden="true"></i><span class="visually-hidden"><span data-lang="ar">إغلاق القائمة</span><span data-lang="en">Close menu</span></span></button>
+    </div>
+    <nav class="sidebar-nav" aria-labelledby="main-nav-label">
+      <div class="nav-section">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link-item" href="../ads/index.html"><i class="bi bi-gear nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">إعلانات قطع الغيار</span><span data-lang="en">Parts ads</span></span></a></li>
+          <li class="nav-item"><a class="nav-link-item" href="../ad-form/index.html"><i class="bi bi-plus-circle nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">إضافة إعلان</span><span data-lang="en">Add ad</span></span></a></li>
+          <li class="nav-item"><a class="nav-link-item" href="../quotes/index.html"><i class="bi bi-chat-left-dots nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">طلبات التسعير</span><span data-lang="en">Quote requests</span></span></a></li>
+          <li class="nav-item"><a class="nav-link-item active" aria-current="page" href="../subscription/index.html"><i class="bi bi-credit-card-2-front nav-icon" aria-hidden="true"></i><span class="nav-label"><span data-lang="ar">الاشتراك</span><span data-lang="en">Subscription</span></span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+  <div class="app-main">
+    <header id="topbar" class="topbar">
+      <button type="button" class="icon-btn" id="sidebar-toggle" data-action="toggle-sidebar" aria-controls="sidebar" aria-expanded="true"><i class="bi bi-list" aria-hidden="true"></i><span class="visually-hidden"><span data-lang="ar">القائمة الرئيسية</span><span data-lang="en">Toggle navigation</span></span></button>
+      <a class="topbar-brand d-md-none" href="../ads/index.html"><span class="brand-mark" aria-hidden="true">O</span><span class="visually-hidden"><span data-lang="ar">أصولي</span><span data-lang="en">Osooly</span></span></a>
+      <div class="topbar-actions">
+        <button type="button" class="topbar-pill" data-action="toggle-lang"><i class="bi bi-translate" aria-hidden="true"></i><span class="d-none d-sm-inline"><span data-lang="ar" lang="en">English</span><span data-lang="en" lang="ar">العربية</span></span><span class="visually-hidden"><span data-lang="ar">تغيير اللغة إلى الإنجليزية</span><span data-lang="en">Switch language to Arabic</span></span></button>
+        <div class="dropdown">
+          <button type="button" class="icon-btn" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bell" aria-hidden="true"></i><span class="visually-hidden"><span data-lang="ar">الإشعارات</span><span data-lang="en">Notifications</span></span></button>
+          <div class="dropdown-menu dropdown-menu-end notif-menu"><div class="notif-head"><span data-lang="ar">الإشعارات</span><span data-lang="en">Notifications</span></div><div class="notif-empty"><i class="bi bi-bell-slash" aria-hidden="true"></i><span data-lang="ar">لا توجد إشعارات جديدة</span><span data-lang="en">No new notifications</span></div></div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="topbar-pill user-btn" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="avatar" aria-hidden="true" data-user-initials><span data-lang="ar">عخ</span><span data-lang="en">OK</span></span>
+            <span class="user-meta d-none d-md-block"><strong data-user-name><span data-lang="ar">عمر خالد</span><span data-lang="en">Omar Khaled</span></strong><span data-lang="ar">محل قطع غيار</span><span data-lang="en">Spare parts shop</span></span>
+            <span class="visually-hidden"><span data-lang="ar">حساب المستخدم</span><span data-lang="en">User menu</span></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end"><li><button type="button" class="dropdown-item" data-action="logout"><i class="bi bi-box-arrow-right me-2" aria-hidden="true"></i><span data-lang="ar">تسجيل الخروج</span><span data-lang="en">Log out</span></button></li></ul>
+        </div>
+      </div>
+    </header>
+
+    <main id="content" class="app-content" tabindex="-1">
+      <section class="page-hero osl-card">
+        <div class="page-hero-media"><img class="page-hero-img" src="../../../../shared/assets/img/osooly-banner-900.webp" srcset="../../../../shared/assets/img/osooly-banner-900.webp 900w, ../../../../shared/assets/img/osooly-banner.webp 2172w" sizes="(min-width: 1400px) 1400px, 100vw" width="2172" height="724" alt="" decoding="async"></div>
+        <div class="page-header">
+          <div class="page-header-main">
+            <nav aria-labelledby="breadcrumb-label"><span id="breadcrumb-label" class="visually-hidden"><span data-lang="ar">مسار التنقل</span><span data-lang="en">Breadcrumb</span></span>
+              <ol class="breadcrumb"><li class="breadcrumb-item"><span data-lang="ar">لوحة محل قطع الغيار</span><span data-lang="en">Spare Parts Shop Dashboard</span></li><li class="breadcrumb-item active" aria-current="page"><span data-lang="ar">الاشتراك</span><span data-lang="en">Subscription</span></li></ol></nav>
+            <h1 class="page-title"><span data-lang="ar">الاشتراك</span><span data-lang="en">Subscription</span></h1>
+          </div>
+        </div>
+      </section>
+
+      <div id="page-body">
+        <section class="osl-card p-4 mb-3" id="sub-card" data-state="active">
+          <div class="alert alert-warning mb-3" data-notice="near" role="alert"><i class="bi bi-bell me-1" aria-hidden="true"></i><span data-lang="ar">يحل موعد تجديد الاشتراك خلال</span><span data-lang="en">Your subscription renews in</span> <bdi data-calc="left"></bdi> <span data-lang="ar">يومًا. يجب الدفع لتجديد الاشتراك.</span><span data-lang="en">days. Payment is required to renew.</span></div>
+        <div class="alert alert-warning mb-3" data-notice="grace" role="alert"><i class="bi bi-exclamation-triangle me-1" aria-hidden="true"></i><span data-lang="ar">انتهى الاشتراك. يجب الدفع لتجديده خلال</span><span data-lang="en">The subscription has ended. Pay to renew within</span> <bdi data-calc="grace"></bdi> <span data-lang="ar">أيام وإلا يُطبَّق الإجراء المعتمد على الحساب.</span><span data-lang="en">days or the approved policy applies to the account.</span></div>
+        <div class="alert alert-danger mb-3" data-notice="expired" role="alert"><i class="bi bi-x-octagon me-1" aria-hidden="true"></i><span data-lang="ar">انتهت مهلة التجديد. يُطبَّق إجراء الإدارة المعتمد على الحساب (قد يُزال من القائمة العامة).</span><span data-lang="en">The grace period has ended. The approved admin policy applies to the account (it may be removed from the public list).</span></div>
+          <div class="d-flex flex-wrap align-items-center gap-2 mb-3"><h2 class="h5 mb-0"><span data-lang="ar">حالة الاشتراك</span><span data-lang="en">Subscription status</span></h2><span class="sub-badges"><span class="status-badge status-approved" data-st="active"><span data-lang="ar">سارٍ</span><span data-lang="en">Active</span></span><span class="status-badge status-pending" data-st="near"><span data-lang="ar">يقترب موعد التجديد</span><span data-lang="en">Renews soon</span></span><span class="status-badge status-pending" data-st="grace"><span data-lang="ar">مهلة التجديد</span><span data-lang="en">Grace period</span></span><span class="status-badge status-rejected" data-st="expired"><span data-lang="ar">منتهٍ</span><span data-lang="en">Expired</span></span></span></div>
+          <dl class="osl-dl">
+            <dt><span data-lang="ar">الخطة</span><span data-lang="en">Plan</span></dt><dd><span data-lang="ar" data-f="planAr"></span><span data-lang="en" data-f="planEn"></span></dd>
+            <dt><span data-lang="ar">تاريخ البداية</span><span data-lang="en">Start date</span></dt><dd><bdi data-f="start"></bdi></dd>
+            <dt><span data-lang="ar">تاريخ الانتهاء</span><span data-lang="en">End date</span></dt><dd><bdi data-f="end"></bdi></dd>
+            <dt><span data-lang="ar">الأيام المتبقية</span><span data-lang="en">Days left</span></dt><dd><bdi data-calc="left"></bdi></dd>
+          </dl>
+          <button type="button" class="btn btn-primary" id="renew-btn"><i class="bi bi-credit-card me-1" aria-hidden="true"></i><span data-lang="ar">تجديد الاشتراك</span><span data-lang="en">Renew subscription</span></button>
+          <span class="small text-secondary ms-2"><span data-lang="ar">الدفع غير مُنفّذ في هذه المرحلة.</span><span data-lang="en">Payment is not built in this phase.</span></span>
+        </section>
+        <section class="osl-card p-4 mb-3"><h2 class="h5 mb-3"><span data-lang="ar">سجل التجديدات والمدفوعات</span><span data-lang="en">Renewals and payments</span></h2><ol class="lp-log"><li class="lp-log-item d-none" data-hist><div class="fw-bold"><span data-lang="ar" data-h="ar"></span><span data-lang="en" data-h="en"></span></div><div class="small text-secondary"><bdi data-h="d"></bdi></div></li><li class="lp-log-item d-none" data-hist><div class="fw-bold"><span data-lang="ar" data-h="ar"></span><span data-lang="en" data-h="en"></span></div><div class="small text-secondary"><bdi data-h="d"></bdi></div></li><li class="lp-log-item d-none" data-hist><div class="fw-bold"><span data-lang="ar" data-h="ar"></span><span data-lang="en" data-h="en"></span></div><div class="small text-secondary"><bdi data-h="d"></bdi></div></li><li class="lp-log-item d-none" data-hist><div class="fw-bold"><span data-lang="ar" data-h="ar"></span><span data-lang="en" data-h="en"></span></div><div class="small text-secondary"><bdi data-h="d"></bdi></div></li><li class="lp-log-item d-none" data-hist><div class="fw-bold"><span data-lang="ar" data-h="ar"></span><span data-lang="en" data-h="en"></span></div><div class="small text-secondary"><bdi data-h="d"></bdi></div></li><li class="lp-log-item d-none" data-hist><div class="fw-bold"><span data-lang="ar" data-h="ar"></span><span data-lang="en" data-h="en"></span></div><div class="small text-secondary"><bdi data-h="d"></bdi></div></li><li class="lp-log-item d-none" data-hist><div class="fw-bold"><span data-lang="ar" data-h="ar"></span><span data-lang="en" data-h="en"></span></div><div class="small text-secondary"><bdi data-h="d"></bdi></div></li><li class="lp-log-item d-none" data-hist><div class="fw-bold"><span data-lang="ar" data-h="ar"></span><span data-lang="en" data-h="en"></span></div><div class="small text-secondary"><bdi data-h="d"></bdi></div></li></ol></section>
+        <section class="osl-card p-4"><h2 class="h6 mb-2"><i class="bi bi-info-circle me-1" aria-hidden="true"></i><span data-lang="ar">بنود غير محددة في الوثيقة (مبدئية)</span><span data-lang="en">Items not defined in the document (placeholders)</span></h2><ul class="small text-secondary mb-0"><li><span data-lang="ar">نقطة بداية السنة المجانية وطريقة احتساب الأيام الخمسة غير محددة.</span><span data-lang="en">The start point of the free year and how the 5 days are counted are not defined.</span></li><li><span data-lang="ar">أسعار التجديد وسياسة التسعير بعد السنة الأولى غير معتمدة.</span><span data-lang="en">Renewal prices and the pricing policy after the first year are not approved.</span></li><li><span data-lang="ar">الإجراء بعد انتهاء المهلة (إزالة الحساب من القائمة العامة) يعتمده العميل.</span><span data-lang="en">The action after the grace period (removal from the public list) is confirmed by the client.</span></li><li><span data-lang="ar">بداية ظهور إشعار التجديد (30 يومًا) افتراضية.</span><span data-lang="en">When the renewal notice starts (30 days) is a placeholder.</span></li></ul></section>
+      </div>
+    </main>
+  </div>
+
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toast" class="toast align-items-center text-bg-primary border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex"><div class="toast-body" id="toast-body"><span data-lang="ar">الدفع غير متاح في هذه المرحلة.</span><span data-lang="en">Payment is not available in this phase.</span></div>
+      <button type="button" class="btn-close btn-close-white m-auto me-2" data-bs-dismiss="toast"><span class="visually-hidden"><span data-lang="ar">إغلاق</span><span data-lang="en">Close</span></span></button></div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="logout-modal" tabindex="-1" aria-labelledby="logout-title" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h2 class="modal-title fs-5" id="logout-title"><span data-lang="ar">تسجيل الخروج؟</span><span data-lang="en">Log out?</span></h2><button type="button" class="btn-close" data-bs-dismiss="modal"><span class="visually-hidden"><span data-lang="ar">إغلاق</span><span data-lang="en">Close</span></span></button></div>
+    <div class="modal-body"><span data-lang="ar">سيتم إنهاء جلستك الحالية.</span><span data-lang="en">You will be signed out of this session.</span></div>
+    <div class="modal-footer"><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"><span data-lang="ar">إلغاء</span><span data-lang="en">Cancel</span></button><button type="button" class="btn btn-primary" id="logout-confirm"><span data-lang="ar">تسجيل الخروج</span><span data-lang="en">Log out</span></button></div>
+  </div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/dashboard.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
